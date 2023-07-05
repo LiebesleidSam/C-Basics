@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "00_HelloWorld
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strings", "04_Strings\Strings.csproj", "{ACFE8718-2BDC-451C-9369-EB9C25CF1459}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booleans", "05_Booleans\Booleans.csproj", "{F6221A5D-87EB-4FE2-9D2D-32011EDCE916}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{ACFE8718-2BDC-451C-9369-EB9C25CF1459}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACFE8718-2BDC-451C-9369-EB9C25CF1459}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACFE8718-2BDC-451C-9369-EB9C25CF1459}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6221A5D-87EB-4FE2-9D2D-32011EDCE916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6221A5D-87EB-4FE2-9D2D-32011EDCE916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6221A5D-87EB-4FE2-9D2D-32011EDCE916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6221A5D-87EB-4FE2-9D2D-32011EDCE916}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
