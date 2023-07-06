@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strings", "04_Strings\Strin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booleans", "05_Booleans\Booleans.csproj", "{F6221A5D-87EB-4FE2-9D2D-32011EDCE916}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06_Conditionals", "06_Conditionals", "{DBBC51EA-9399-4BC0-A8D4-052B5621A83D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IfStatements", "06_Conditionals\IfStatements\IfStatements.csproj", "{1FC5228D-6F68-4CC8-9284-AFB4AC682E13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,12 @@ Global
 		{F6221A5D-87EB-4FE2-9D2D-32011EDCE916}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6221A5D-87EB-4FE2-9D2D-32011EDCE916}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6221A5D-87EB-4FE2-9D2D-32011EDCE916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FC5228D-6F68-4CC8-9284-AFB4AC682E13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FC5228D-6F68-4CC8-9284-AFB4AC682E13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FC5228D-6F68-4CC8-9284-AFB4AC682E13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FC5228D-6F68-4CC8-9284-AFB4AC682E13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1FC5228D-6F68-4CC8-9284-AFB4AC682E13} = {DBBC51EA-9399-4BC0-A8D4-052B5621A83D}
 	EndGlobalSection
 EndGlobal

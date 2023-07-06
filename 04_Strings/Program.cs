@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-string firstName = "Sam";
+﻿string firstName = "Sam";
 string lastName = "Ruiz";
 
 // Concatenation
