@@ -29,7 +29,7 @@ namespace Classes
         {
             string[] date = BirthDate.Split("/");
             int birthYear = int.Parse(date[date.Length - 1]);
-            return 2023 - birthYear;
+            return DateTime.Now.Year - birthYear;
         }
     }
 
