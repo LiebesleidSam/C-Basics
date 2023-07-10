@@ -1,26 +1,35 @@
 ﻿using Classes;
 
-// type name = new typeConstructor
-Donut tasty = new Donut("Cream Filled");
+User sam = new User("Sam", "Ruiz", 1, "08/23/1999");
 
-// tasty.donutType = "Jelly Filled";
-
-Console.WriteLine(tasty.donutType);
+Console.WriteLine(sam.GetAge());
+Console.WriteLine(sam.GetFullName());
 
 namespace Classes
 {
-    class Donut
+    class User
     {
-        // Field
-        public string donutType;
+        public string FirstName { get; set; }
+        public string LastName {get; set; }
+        public int ID {get; }
+        public string BirthDate {get; set; }
 
-        // Constructor
-        // public Donut() {}
-        public Donut(string type)
+        public User(string firstName, string lastName, int ID, string brithDate)
         {
-            // Assinging the constructor parameter to the field
-            // Whatever is passed into the constructor it passes its value to the field
-            donutType = type;
+            this.FirstName = firstName;
+            this.LastName = lastName;
+            this.ID = ID;
+            this.BirthDate = brithDate;
+        }
+        public string GetFullName()
+        {
+            return FirstName + " " + LastName;
+        }
+        public int GetAge()
+        {
+            string[] date = BirthDate.Split("/");
+            int birthYear = int.Parse(date[date.Length - 1]);
+            return 2023 - birthYear;
         }
     }
 
