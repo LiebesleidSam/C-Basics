@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForeachLoops", "07_Loops\Fo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopsChallenges", "07_Loops\Challenges\LoopsChallenges.csproj", "{B5C787F3-F300-467A-BCF3-898300604E0A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "08_Classes\Classes.csproj", "{2B8910B6-43F3-4A83-B631-1547BD76161B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -76,6 +78,10 @@ Global
 		{B5C787F3-F300-467A-BCF3-898300604E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5C787F3-F300-467A-BCF3-898300604E0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5C787F3-F300-467A-BCF3-898300604E0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B8910B6-43F3-4A83-B631-1547BD76161B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B8910B6-43F3-4A83-B631-1547BD76161B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B8910B6-43F3-4A83-B631-1547BD76161B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B8910B6-43F3-4A83-B631-1547BD76161B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1FC5228D-6F68-4CC8-9284-AFB4AC682E13} = {DBBC51EA-9399-4BC0-A8D4-052B5621A83D}
