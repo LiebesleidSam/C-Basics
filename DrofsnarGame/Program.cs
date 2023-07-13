@@ -1,4 +1,4 @@
-﻿using System.IO;
+﻿// using System.IO;
 using Classes;
 
 StreamReader sr = new StreamReader("./DrofsnarGame/game-sequence.txt");
@@ -17,5 +17,5 @@ foreach (string word in words)
     }
 }
 
-Console.WriteLine($"Final Points: {player.Points}");
-Console.WriteLine($"Final Lives: {player.Lives}");
+Console.WriteLine($"Total Points: {player.Points}");
+Console.WriteLine($"Remaining Lives: {player.Lives}");
