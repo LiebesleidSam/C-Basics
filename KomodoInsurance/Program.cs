@@ -14,6 +14,7 @@ void DisplayMenu()
     Console.WriteLine("Option 5) Add Developer to a Team");
     Console.WriteLine("Option 6) Remove a Developer from a Team");
     string option = Console.ReadLine();
+    Console.Clear();
     switch (option)
     {
         case "1":
@@ -44,7 +45,7 @@ void CreateDeveloper()
     Console.WriteLine("What is the Developer's Name?");
     string name = Console.ReadLine();
 
-    Console.WriteLine("The Developer have access to Pluralsight?");
+    Console.WriteLine("The Developer has access to Pluralsight?");
     bool access = bool.Parse(Console.ReadLine());
 
     devId += 1;
@@ -52,6 +53,7 @@ void CreateDeveloper()
     Developer dev = new Developer(name, devId, access);
     devRepo.AddDeveloperToDirectory(dev);
 
+    Console.Clear();
     DisplayMenu();
 }
 
@@ -65,6 +67,7 @@ void CreateDevTeam()
     DevTeam team = new DevTeam(name, teamId);
     devTeamRepo.AddDevTeamToDirectory(team);
 
+    Console.Clear();
     DisplayMenu();
 }
 
@@ -79,7 +82,8 @@ void DeleteDeveloper()
     Console.WriteLine("Please type the Id of the Developer you would like to delete.");
     int targetId = int.Parse(Console.ReadLine());
     devRepo.DeleteDeveloper(targetId);
-
+    
+    Console.Clear();
     DisplayMenu();
 }
 
@@ -95,6 +99,7 @@ void DeleteDevTeam()
     int targetId = int.Parse(Console.ReadLine());
     devTeamRepo.DeleteDevTeam(targetId);
 
+    Console.Clear();
     DisplayMenu();
 }
 
@@ -122,6 +127,7 @@ void AddDevToTeam()
 
     targetTeam.AddDeveloperToTeam(targetDev);
 
+    Console.Clear();
     DisplayMenu();
 }
 
@@ -149,6 +155,7 @@ void RemoveDevFromTeam()
 
     targetTeam.RemoveDeveloperFromTeam(targetDev);
 
+    Console.Clear();
     DisplayMenu();
 }
 
