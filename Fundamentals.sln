@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryPattern", "09_Rep
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KomodoInsurance", "KomodoInsurance\KomodoInsurance.csproj", "{D8D7BEEE-1643-4DCA-B10A-D6FBCB8AEBE8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritence", "10_Inheritence\Inheritence.csproj", "{A14BB833-64CF-48DF-9EBF-56DF911CC6D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -120,6 +122,10 @@ Global
 		{D8D7BEEE-1643-4DCA-B10A-D6FBCB8AEBE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8D7BEEE-1643-4DCA-B10A-D6FBCB8AEBE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8D7BEEE-1643-4DCA-B10A-D6FBCB8AEBE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A14BB833-64CF-48DF-9EBF-56DF911CC6D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A14BB833-64CF-48DF-9EBF-56DF911CC6D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A14BB833-64CF-48DF-9EBF-56DF911CC6D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A14BB833-64CF-48DF-9EBF-56DF911CC6D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1FC5228D-6F68-4CC8-9284-AFB4AC682E13} = {DBBC51EA-9399-4BC0-A8D4-052B5621A83D}
