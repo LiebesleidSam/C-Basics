@@ -8,7 +8,7 @@ public class DevTeam
         TeamName = teamName;
         TeamId = teamId;
     }
-    public List<Developer> TeamMembers { get; set; }
+    public List<Developer> TeamMembers { get; private set; }
     public string TeamName { get; set; }
     public int TeamId { get; set; }
     public void AddDeveloperToTeam(Developer dev)
