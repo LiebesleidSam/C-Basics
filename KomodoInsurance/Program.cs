@@ -16,6 +16,7 @@ void DisplayMenu()
     Console.WriteLine("Option 6) Delete a Team");
     Console.WriteLine("Option 7) Add Developer to a Team");
     Console.WriteLine("Option 8) Remove a Developer from a Team");
+    Console.WriteLine("Option 9) Show Devs that need Pluralsight license");
     string option = Console.ReadLine();
     Console.Clear();
     switch (option)
@@ -46,6 +47,10 @@ void DisplayMenu()
         case "8":
             RemoveDevFromTeam();
             break;
+        case "9":
+            ShowPluralsightDevs();
+            PressAnyKeyToContinue();
+            break;
         default:
             keepRunning = false;
             break;
@@ -57,7 +62,7 @@ void CreateDeveloper()
     Console.WriteLine("What is the Developer's Name?");
     string name = Console.ReadLine();
 
-    Console.WriteLine("The Developer has access to Pluralsight?");
+    Console.WriteLine("The Developer has access to Pluralsight? (true/false)");
     bool access = bool.Parse(Console.ReadLine());
 
     devId += 1;
@@ -83,6 +88,18 @@ void DeleteDeveloper()
 
     Console.WriteLine("Please type the Id of the Developer you would like to delete.");
     int targetId = int.Parse(Console.ReadLine());
+
+    List<DevTeam> devTeamDirectory = devTeamRepo.GetDirectory();
+    foreach (DevTeam team in devTeamDirectory)
+    {
+        foreach (Developer dev in team.TeamMembers.ToList())
+        {
+            if (dev.Id == targetId)
+            {
+                team.RemoveDeveloperFromTeam(dev);
+            }
+        }
+    }
     devRepo.DeleteDeveloper(targetId);
 }
 
@@ -109,7 +126,20 @@ void AddDevToTeam()
     int targetDevId = int.Parse(Console.ReadLine());
     Developer targetDev = devRepo.GetDeveloperById(targetDevId);
 
-    targetTeam.AddDeveloperToTeam(targetDev);
+    bool isOnTeam = false;
+    foreach (Developer dev in targetTeam.TeamMembers)
+    {
+        if (dev == targetDev)
+        {
+            isOnTeam = true;
+            Console.WriteLine("That Developer is already part of that team.");
+            PressAnyKeyToContinue();
+        }
+    }
+    if (!isOnTeam)
+    {
+        targetTeam.AddDeveloperToTeam(targetDev);
+    }
 }
 
 void RemoveDevFromTeam()
@@ -156,6 +186,35 @@ void PressAnyKeyToContinue()
     Console.WriteLine("Press any key to continue.");
     Console.ReadKey();
 }
+
+void ShowPluralsightDevs()
+{
+    List<Developer> devDirectory = devRepo.GetDirectory();
+    foreach (Developer dev in devDirectory)
+    {
+        if (dev.PluralsightAccess == false)
+        {
+            Console.WriteLine($"Name: {dev.Name}  Id: {dev.Id}");
+        }
+    }
+}
+
+void SeedData()
+{
+    Developer sam = new Developer("Sam", 97, true);
+    Developer nathan = new Developer("Nathan", 98, true);
+    Developer david = new Developer("David", 99, false);
+    devRepo.AddDeveloperToDirectory(sam);
+    devRepo.AddDeveloperToDirectory(nathan);
+    devRepo.AddDeveloperToDirectory(david);
+    DevTeam sd171 = new DevTeam("sd171", 1);
+    devTeamRepo.AddDevTeamToDirectory(sd171);
+    sd171.AddDeveloperToTeam(sam);
+    sd171.AddDeveloperToTeam(nathan);
+    sd171.AddDeveloperToTeam(david);
+}
+
+SeedData();
 
 while (keepRunning)
 {   
