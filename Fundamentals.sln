@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fruits", "11_Interface\Frui
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependancyInjection", "11_Interface\DependancyInjection\DependancyInjection.csproj", "{F28BDF45-9817-490C-8556-EEB3480DBA5D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryConsoleApp", "RepositoryConsoleApp\RepositoryConsoleApp.csproj", "{634F19C8-E815-47E8-894B-F1E0100023D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -140,6 +142,10 @@ Global
 		{F28BDF45-9817-490C-8556-EEB3480DBA5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F28BDF45-9817-490C-8556-EEB3480DBA5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F28BDF45-9817-490C-8556-EEB3480DBA5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{634F19C8-E815-47E8-894B-F1E0100023D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{634F19C8-E815-47E8-894B-F1E0100023D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{634F19C8-E815-47E8-894B-F1E0100023D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{634F19C8-E815-47E8-894B-F1E0100023D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1FC5228D-6F68-4CC8-9284-AFB4AC682E13} = {DBBC51EA-9399-4BC0-A8D4-052B5621A83D}
